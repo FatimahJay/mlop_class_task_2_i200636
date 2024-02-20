@@ -1,5 +1,5 @@
 class mlops:
-        def _init_(self, totalStudents):
+        def __init__(self, totalStudents):
                 self.totalStudents = totalStudents
 
         def getTotalStudents(self):
