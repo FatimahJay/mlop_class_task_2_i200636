@@ -2,9 +2,9 @@ pipeline {
     agent any
 
     stages {
-        stage('Cloning the repository') {
+         stage('Checkout repository') {
             steps {
-                git 'https://github.com/FatimahJay/mlop_class_task_2_i200636'
+                 checkout scmGit(branches: [[name: '*/main']], extensions: [], userRemoteConfigs: [[url: 'https://github.com/FatimahJay/mlop_class_task_2_i200636']])
             }
         }
 
